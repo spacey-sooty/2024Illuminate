@@ -115,6 +115,18 @@ export default function Home() {
                                         <CardContent className="flex flex-col items-center justify-center p-8 space-y-4">
                                             <blockquote className="text-center">
                                                 <p className="text-xl font-medium">
+                                                    &quot;"Would've been great to have back when I was in uni!"&quot;
+                                                </p>
+                                                <cite className="mt-4 not-italic text-muted-foreground">- Taylor Kahlenberg, 25</cite>
+                                            </blockquote>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                                <CarouselItem>
+                                    <Card className="h-full">
+                                        <CardContent className="flex flex-col items-center justify-center p-8 space-y-4">
+                                            <blockquote className="text-center">
+                                                <p className="text-xl font-medium">
                                                     &quot;This product is pretty gang. It has greatly improved my trust in the internet and ability to find good sources.&quot;
                                                 </p>
                                                 <cite className="mt-4 not-italic text-muted-foreground">- Ethan Mcauliffe, 16</cite>
