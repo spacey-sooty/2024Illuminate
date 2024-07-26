@@ -47,28 +47,11 @@ export default function Home() {
                     <div className="container px-4 md:px-6">
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                                <GaugeIcon className="h-12 w-12 text-primary" />
+                                <TrustIcon className="h-12 w-12 text-primary" />
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-bold">Increased Efficiency</h3>
+                                    <h3 className="text-xl font-bold">Increase Trust</h3>
                                     <p className="max-w-[300px] text-muted-foreground">
-                                        Our innovative product streamlines your workflows, helping you save time and boost productivity.
-                                    </p>
-                                </div>
-                                <Link
-                                    href="#"
-                                    className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                                    prefetch={false}
-                                >
-                                    Learn More
-                                </Link>
-                            </div>
-                            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                                <BoltIcon className="h-12 w-12 text-primary" />
-                                <div className="space-y-2">
-                                    <h3 className="text-xl font-bold">Unparalleled Speed</h3>
-                                    <p className="max-w-[300px] text-muted-foreground">
-                                        Our cutting-edge technology delivers lightning-fast performance, ensuring your projects move forward
-                                        at the speed of innovation.
+                                        Our innovative extension increases trust in the web by showing the accuracy of different sites.
                                     </p>
                                 </div>
                                 <Link
@@ -82,9 +65,25 @@ export default function Home() {
                             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                                 <RocketIcon className="h-12 w-12 text-primary" />
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-bold">Unparalleled Scalability</h3>
+                                    <h3 className="text-xl font-bold">Boost Research Efficency</h3>
                                     <p className="max-w-[300px] text-muted-foreground">
-                                        Our product is designed to scale seamlessly, ensuring your business can grow without limits.
+                                        By removing the need to manually check source to see if they are reliable your speed when researching topics or ideas will skyrocket.
+                                    </p>
+                                </div>
+                                <Link
+                                    href="#"
+                                    className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                                    prefetch={false}
+                                >
+                                    Learn More
+                                </Link>
+                            </div>
+                            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                                <GaugeIcon className="h-12 w-12 text-primary" />
+                                <div className="space-y-2">
+                                    <h3 className="text-xl font-bold">Save Time</h3>
+                                    <p className="max-w-[300px] text-muted-foreground">
+                                        Our product will save you time day to day when browsing the internet.
                                     </p>
                                 </div>
                                 <Link
@@ -233,5 +232,39 @@ function RocketIcon(props: any) {
             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
             <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
         </svg>
+    )
+}
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/vwLXYSnC5Px
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+function TrustIcon(props: any) {
+    return (
+        <div className="flex items-center justify-center" {...props}>
+            <svg className="w-12 h-12 text-primary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2L3 7V13C3 17.9706 7.02944 22 12 22C16.9706 22 21 17.9706 21 13V7L12 2Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+                <path
+                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+                <path
+                    d="M9 12L11 14L15 10"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+            </svg>
+        </div>
     )
 }
